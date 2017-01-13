@@ -1,6 +1,6 @@
 * {
-    margin:1px;
-    padding:1px;
+    margin:0;
+    padding:0;
 }
 body{
     text-align:center;
@@ -14,17 +14,20 @@ body{
 
 #logo {
     display: inline;
-    padding: 5px 2px 10px 10px; /* top, right, botton, left */
+    padding: 5px 10px 10px 10px; /* top, right, botton, left */
     vertical-align: middle;
     float: left;
     width: 250px;
+    height: 130px;
 }
+
 #logo1{
     display: inline;
-    padding: 3px 2px 10px 10px; /* top, right, botton, left */
+    padding: 5px 10px 10px 10px; /* top, right, botton, left */
     vertical-align: middle;
     float: right;
     width: 250px;
+    height: 130px;
 }
 #video {
     display: inline;
@@ -45,11 +48,13 @@ body{
     font-size:30px;
     text-align:center;
     font-style: normal;
+
 }
 #page_nav ul{
     padding:0;
     list-style-type:none;
     text-align:right;
+	cursor: pointer;
 }
 #page_nav li{
     display:inline;
@@ -82,8 +87,9 @@ body{
     float:left;
     margin:16px;
     font-style: oblique;
-    text-align:left;
+    text-align:justify;
     font-family: Arial, Helvetica, sans-serif;
+    text-indent:40px;
 }
 #page_fans {
     color: white;
@@ -93,6 +99,7 @@ body{
     font-style: oblique;
     text-align:left;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 0 30px;
 }
 #page_fans1{
     color: white;
@@ -100,7 +107,9 @@ body{
     width: 1060px;
     float: left;
     text-align: center;
-    font-style: oblique
+    font-style: oblique;
+    padding:0 0 0 10px
+
 }
 #fans_name{
     font-size: 30px;
@@ -111,10 +120,12 @@ body{
 }
 
 #right_side{
-    background-color:lightgreen;
+    background:linear-gradient(lightgreen,darkseagreen);
     width:240px;
     float:right;
+
 }
+
 #right_side strong{
     color:green;
     display: inline-block;
@@ -122,15 +133,16 @@ body{
 #news {
     color:green;
     display: inline-block;
-    background-color: white;
-    width: auto;
-    height: auto;
-    font-size:20px;
+    background-color: transparent;
+    width:  auto;
+    height:  auto;
+
 }
 #table, th, td{
-    border: 1px solid;
+    border: 1px solid #ffffff;
     text-align:center;
-    width:1080px;
+    width:960px;
+    margin:0 0 0 50px;
 }
 #table_name {
     color: black;
