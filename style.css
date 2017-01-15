@@ -123,12 +123,12 @@ body{
     background:linear-gradient(lightgreen,darkseagreen);
     width:240px;
     float:right;
-
 }
 
 #right_side strong{
     color:green;
     display: inline-block;
+
 }
 #news {
     color:green;
@@ -184,13 +184,47 @@ body{
      font-size: 25px;
      font-style: normal;
  }
+.name-maps{
+    padding:50px 200px 50px 0;
+    font-size: 30px;
+    color: white;
+}
+div iframe{
+    margin: 0 240px 40px 0;
+}
+.foto-stadiums {
+    display:inline-block;
+    width: 1000px;
+    height: 500px;
+    padding:60px 0 0 0;
+}
+
+.foto-stadiums img {
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+
+}
+
+.foto-stadiums img:hover {
+    transform: scale(2.0);
+    -webkit-transition: transform 0.3s ease-in-out;
+}
+
+
+.foto-stadiums p{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 
 
 #footer {
     clear:both;
     font-size:20px;
     background-color: darkgreen;
-    text-aling:center;
+    text-align: center;
     height:100px;
 
 }
