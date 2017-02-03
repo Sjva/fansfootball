@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
+		
         <title>Главная</title>
-        <link href="animate.css" rel="stylesheet" type="text/css">
 
         <link href="style.css" rel="stylesheet" type="text/css">
-
+        <!--подключение знаков фейсбук, вк, скайп в подвале сайта-->
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!--подключение фавикона-->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <!--подключение анимаций-->
         <link rel="stylesheet" href="animate.css">
         <script src="wow.min.js"></script>
         <script>
@@ -18,13 +18,37 @@
         </script>
 
     </head>
-    <body style="background-image:url(image/fild.jpg)" >
-        <header id="page_header">
-            <img src="image/fifa.jpg" id="logo"  alt="логотип фифа" class="wow bounceInLeft" data-wow-delay="0.5s">
-            <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов" class="wow bounceInRight" data-wow-delay="0.5s">
-            <h1 class="wow bounceInDown"> <strong>FOOTBALL GAME</strong></h1>
-            <h4 class="wow bounceInDown">the best game in the world</h4>
-        </header>
+    <body>
+
+          <header id="page_header">
+	<div class="t3d2">
+            <div class="rotate">
+                <img src="image/fifa.jpg" id="logo"  alt="логотип фифа" class="wow bounceInLeft" data-wow-delay="0.5s">
+                <div class="text3d">
+                    <div class="pd">
+                        <p><b>Международная федерация футбола</b> <br> (фр. Fédération internationale de football association, сокр. FIFA) —
+                            главная футбольная организация, являющаяся крупнейшим международным руководящим органом в футболе, футзале и пляжном футболе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="t3d">
+            <div class="rotate">
+                <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов" class="wow bounceInRight" data-wow-delay="0.5s">
+                <div class="text">
+                    <div class="pd">
+                        <p><b>Сою́з европе́йских футбо́льных ассоциа́ций </b> <br>(англ. Union of European Football Associations, сокр. UEFA,
+                            в русской транслитерации УЕФА) — организация, управляющая футболом в Европе и некоторых западных регионах Азии.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h1 class="wow bounceInDown"> <strong>FOOTBALL GAME</strong></h1>
+        <h4 class="wow bounceInDown">the best game in the world</h4>
+    </header>
 
         <audio src="music/song1.mp3#t=0,8" autoplay> песня фанатов </audio>
         <br>
@@ -32,13 +56,17 @@
         <nav id="page_nav">
             <ul>
                 <li>
-                    <menu label="button" id="page_menu" class="wow bounceInRight" data-wow-delay="0.5s">
-                        <a href="index.html">  <img src="image/cooltext224665271966124MouseOver.png" /></a>
-                        <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';" onmouseout="this.src='image/cooltext224666207301082.png';" /> </a>
-                        <a href="goals.html"><img src="image/cooltext224666401947131.png" onmouseover="this.src='image/cooltext224666401947131MouseOver.png';" onmouseout="this.src='image/cooltext224666401947131.png';" /> </a>
-                        <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';" onmouseout="this.src='image/cooltext224666559983071.png';" /> </a>
-                        <a href="stadium.html">   <img src="image/cooltext225944224791182.png" onmouseover="this.src='image/cooltext225944224791182MouseOver.png';" onmouseout="this.src='image/cooltext225944224791182.png';" /></a>
-                    </menu>
+                    <div  id="page_menu" class="wow bounceInRight" data-wow-delay="0.5s"  >
+                        <a href="index.html">  <img src="image/cooltext224665271966124MouseOver.png" alt="кнопка Главная"/></a>
+                        <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';"
+                                                    onmouseout="this.src='image/cooltext224666207301082.png';" alt="кнопка История" /> </a>
+                        <a href="goals.html"><img src="image/cooltext224666401947131.png" onmouseover="this.src='image/cooltext224666401947131MouseOver.png';"
+                                                  onmouseout="this.src='image/cooltext224666401947131.png';" alt="кнопка Голы"/> </a>
+                        <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';"
+                                                 onmouseout="this.src='image/cooltext224666559983071.png';" alt="кнопка Фаны"/> </a>
+                        <a href="stadium.html">   <img src="image/cooltext225944224791182.png" onmouseover="this.src='image/cooltext225944224791182MouseOver.png';"
+                                                       onmouseout="this.src='image/cooltext225944224791182.png';" alt="кнопка Стадионы"/></a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -46,14 +74,15 @@
         <div id="top_text">
             <section class="wow bounceInLeft" data-wow-delay="0.8s">
                 <h2 id="top" >Сборная Украины по футболу</h2>
-                <strong>Сборная Украины по футболу </strong>
-                (укр. Збірна України з футболу) — национальная команда,
-                представляющая Украину на международных соревнованиях по футболу.
-                Управляющая организация  — Федерация футбола Украины.
-                Наивысшим достижением сборной является  1/4 финала на чемпионате мира 2006, к этому достижению её привёл
-                украинский тренер Олег Блохин.
-                По состоянию на 22 декабря 2016 года  сборная Украины занимает 30-е место в рейтинге ФИФА[1],
-                а в рейтинге УЕФА по состоянию на 13 ноября 2015 года[2] — 14-е.
+                    <p><strong>Сборная Украины по футболу </strong>
+                       (укр. Збірна України з футболу) — национальная команда,
+                        представляющая Украину на международных соревнованиях по футболу.
+                        Управляющая организация  — Федерация футбола Украины.
+                        Наивысшим достижением сборной является  1/4 финала на чемпионате мира 2006,
+                        к этому достижению её привёл украинский тренер Олег Блохин.
+                        По состоянию на 22 декабря 2016 года  сборная Украины занимает 30-е место в рейтинге ФИФА[1],
+                        а в рейтинге УЕФА по состоянию на 13 ноября 2015 года[2] — 14-е.
+                   </p>
             </section>
         </div> <br>
         <aside id="right_side" class="wow bounceInRight" data-wow-delay="1.2s">
@@ -61,7 +90,7 @@
             <img src="image/history.jpg" alt="Исторические данные сборной">
             <div id="news">
                 <a href="http://football.ua/newsarc/" target="_blank">
-                    <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';" onmouseout="this.src='image/cooltext224667211183871.png';" />
+                    <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';" onmouseout="this.src='image/cooltext224667211183871.png';" alt="кнопка Новости" />
                 </a>
             </div>
         </aside>

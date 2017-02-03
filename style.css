@@ -1,63 +1,143 @@
-* {
+@font-face {
+    font-family: FedraSansPro-BoldItalic;
+    src: url(fonts/FedraSansPro-BoldItalic.otf);
+    src: url(fonts/FedraSansPro-DemiItalic.otf);
+}
+*{
     margin:0;
     padding:0;
 }
 body{
+    background:url(image/fild.jpg)no-repeat center;
+    background-size: cover;
     text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: FedraSansPro-BoldItalic, Helvetica, sans-serif;
+
 }
-#page_header{
+#page_header{     /* оглавления сайта*/
     background-color:green;
     color:white;
-    font-size:40px;
+    font-size:32px;
+    height: 130px;
+}
+                 /* 3d лого с текстом*/
+#logo1{
+
+    padding: 0; /* top, right, botton, left */
+    vertical-align: middle;
+    float: right;
+    width: 250px;
+    height: 130px;
 }
 
+.t3d{
+    width:250px;
+    height:130px;
+    float: right;
+}
+.t3d:hover .rotate{
+    transform: rotateY(180deg);
+}
+.rotate{
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+.text {
+    position:absolute;
+    top: 0;
+    left:-10px;
+    transform: rotateY(180deg);
+}
+.text {
+    width: 250px;
+    height: 130px;
+    background: #fff;
+    backface-visibility: hidden;
+    font-size: 12px;
+    color: black;
+    text-align:justify;
+    margin: 0 10px;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pd{
+    padding:12px;
+}
+/* 3d лого с текстом*/
 #logo {
-    display: inline;
-    padding: 5px 10px 10px 10px; /* top, right, botton, left */
+
+    padding: 0; /* top, right, botton, left */
     vertical-align: middle;
     float: left;
     width: 250px;
     height: 130px;
 }
 
-#logo1{
-    display: inline;
-    padding: 5px 10px 10px 10px; /* top, right, botton, left */
-    vertical-align: middle;
-    float: right;
-    width: 250px;
-    height: 130px;
-}
-#video {
-    display: inline;
-    padding: 60px 2px 10px 10px; /* top, right, botton, left */
-    vertical-align: middle;
-}
-#top_text{
-    color:white;
-    font-size:22px;
-    width:1060px;
+.t3d2 {
+    width:250px;
+    height:130px;
     float:left;
-    text-align:center;
-    font-style:oblique;
-
 }
-#top {
+.t3d2:hover .rotate{
+    transform: rotateY(180deg);
+}
+.text3d{
+    position:absolute;
+    top: 0;
+    left:0;
+    transform: rotateY(180deg);
+}
+.text3d{
+    width: 249px;
+    height: 129px;
+    background: #fff;
+    backface-visibility: hidden;
+    font-size: 12px;
+    color: black;
+    text-align:justify;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#top {  /* текст на странице главная*/
     color:black;
     font-size:30px;
     text-align:center;
     font-style: normal;
 
 }
-#page_nav ul{
+#top_text{
+    color:black;
+    font-size:20px;
+    width:1060px;
+    float:left;
+    font-style:oblique;
+    text-align:justify;
+    text-indent:40px;
+    line-height: normal;
+    margin: 15px;
+}
+#top_text {
+    padding: 5px; /* Поля вокруг изображения */
+    padding-right: 5px;
+    background:linear-gradient(lightgreen,darkseagreen); /* Цвет фона */
+    float: left; /* Обтекание по правому краю */
+    border-radius: 15px;
+    opacity: 0.9;
+    box-shadow: 0 0 25px  rgba(0,0,0,0.9);
+    border: 2px solid #ffffff;
+
+}
+
+#page_nav ul{ /*меню сайта с кнопками*/
     padding:0;
     list-style-type:none;
     text-align:right;
 	cursor: pointer;
 }
 #page_nav li{
-    display:inline;
     padding:10px;
 }
 
@@ -65,178 +145,313 @@ body{
     text-decoration: none;
 }
 #page_menu div {
-    display: inline-block;
     background-color: white;
     width: auto;
     height: auto;
     font-size:20px;
-
 }
-
 #page_nav strong{
     color:green;
 }
-
-#page_history{
-    font-size: 30px;
-}
-#history_text{
-    color: white;
-    font-size: 18px;
-    width: 1060px;
-    float:left;
-    margin:16px;
-    font-style: oblique;
-    text-align:justify;
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent:40px;
-}
-#page_fans {
-    color: white;
-    font-size: 18px;
-    width: 1060px;
-    float:left;
-    font-style: oblique;
-    text-align:left;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 0 0 30px;
-}
-#page_fans1{
-    color: white;
-    font-size: 18px;
-    width: 1060px;
-    float: left;
-    text-align: center;
-    font-style: oblique;
-    padding:0 0 0 10px
-
-}
-#fans_name{
-    font-size: 30px;
-}
-#video_name{
-    font-size: 40px;
-    text-align: center;
-}
-
+         /*правый бар сайта*/
 #right_side{
     background:linear-gradient(lightgreen,darkseagreen);
     width:240px;
     float:right;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 25px  rgba(0,0,0,0.9);
 }
-
 #right_side strong{
     color:green;
-    display: inline-block;
-
+   position: fixed;
 }
-#news {
+#news { /*кнопка новости на правом баре сайта*/
     color:green;
     display: inline-block;
     background-color: transparent;
     width:  auto;
     height:  auto;
-
 }
-#table, th, td{
+#right_side {
+    font-family: FedraSansPro-BoldItalic, Helvetica, sans-serif;
+}
+#table, th, td{   /*таблица на странице главная*/
     border: 1px solid #ffffff;
     text-align:center;
-    width:960px;
-    margin:0 0 0 50px;
+    width:930px;
+    margin:20px 0 0 60px;
+    background:linear-gradient(lightgreen,darkseagreen);
+    opacity: 0.9;
+
 }
 #table_name {
     color: black;
     font-size: 25px;
     text-align:center;
+    padding:20px 0 0 0;
+
 }
 #table tr{
-    color:white;
-    font-size: 15px;
+    color:black;
+    font-size: 16px;
     font-style:oblique;
 }
 
 #table_row {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-style: normal;
 }
 #table_row1 {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-style: normal;
 }
 #table_row2 {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-style: normal;
 }
 #table_row3 {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-style: normal;
 }
 #table_row4 {
-    color: white;
-    font-size: 25px;
+    color: black;
+    font-size: 20px;
     font-style: normal;
-}#table_row5 {
-     color: white;
-     font-size: 25px;
+}
+#table_row5 {
+     color: black;
+     font-size: 20px;
      font-style: normal;
  }
-.name-maps{
+@media (max-width:1200px) and (min-width: 320px){
+    #right_side {
+        display: none;}
+    #page_header h1{
+        font-size: 55px;}
+
+}
+@media (max-width:992px) and (min-width: 320px) {
+    #right_side {
+        display: none;}
+    #page_nav {
+        margin: 0;  }
+    #top_text {
+        width: 940px;
+    }
+    #top_text p {
+        font-size: 18px;
+        margin: 0 10px 0 10px;
+        padding-right: 5px;  }
+    #top {
+        font-size: 18px;  }
+}
+@media (max-width:500px) and (min-width: 320px){
+    #right_side {
+        display: none;}
+    #top_text p{
+        font-size: 12px;
+        margin: 0 130px 0 20px;}
+    #top{
+        font-size:12px;  }
+    #table {
+        margin:0 0 0 5px;
+        width: 900px;  }
+    #table th, td{   /*таблица на странице главная*/
+        width:900px;
+        margin:0 0 0 10px;
+    }
+}
+#page_history{ /*текст на странице история*/
+    font-size: 30px;
+    margin: 10px 0 0 300px;
+    text-align: left;
+}
+#page_history1 {
+    font-size: 20px;
+    margin: 10px 0 0 450px;
+    text-align: left;
+}
+#history_text{
+    color: black;
+    font-size: 18px;
+    width: 1000px;
+    float:left;
+    margin: 14px 0 0 35px;
+    font-style: oblique;
+    text-align:justify;
+    font-family: FedraSansPro-BoldItalic, Helvetica, sans-serif;
+    text-indent:40px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+#history_text {
+    padding: 15px; /* Поля вокруг изображения */
+    padding-right: 15px;
+    background:linear-gradient(lightgreen,darkseagreen); /* Цвет фона */
+    float: left; /* Обтекание по правому краю */
+    border-radius: 15px;
+    opacity: 0.8;
+    box-shadow: 0 0 25px  rgba(0,0,0,0.9);
+    border: 2px solid #ffffff;
+}
+.right_side-history {
+    margin: 15px 0 0 0 ;
+}
+@media (max-width:992px) and (min-width: 320px){
+    #page_history{ /*текст на странице история*/
+        font-size: 30px;
+    }
+    #history_text p{
+        font-size: 16px;
+       margin: 0 25px 0  10px;
+     }
+}
+#video { /* видео страниц голы*/
+    display: inline;
+    padding: 60px 2px 10px 10px; /* top, right, botton, left */
+    vertical-align: middle;
+}
+#video_name { /*название видео на страницы голы*/
+    font-size: 40px;
+    margin: 50px 0 0 200px;
+    color: black;
+    text-align: left;
+}
+#page_fans { /*страница фаны*/
+    color: black;
+    font-size: 18px;
+    width: 1000px;
+    float:left;
+    font-style: oblique;
+    text-align:left;
+    padding: 10px 0 0 30px;
+}
+#page_fans1{
+    color: black;
+    font-size: 18px;
+    width: 1000px;
+    float: left;
+    font-style: oblique;
+    padding:0 0 0 15px;
+    text-align:justify;
+    text-indent:40px;
+}
+.fans_name{
+    font-size: 30px;
+    margin:25px 0 0 320px;
+    text-align: left;
+}
+.fans_name1{
+    font-size: 16px;
+    margin:20px 0 0 130px;
+    text-align: left;
+}
+.fans-image {
+    margin: 20px 0 15px 50px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px  rgba(0,0,0,0.9);
+}
+.fans-image1 {
+    margin: 0 0 0 250px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px  rgba(0,0,0,0.9);
+}
+.fans-image2 {
+    margin: 20px 0 15px 90px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px  rgba(0,0,0,0.9);
+}
+.fans-video {
+    margin: 0 0 0 100px;
+}
+.right_side-fans {
+    margin: 20px 0 0 0;
+}
+#fans-story {
+    padding: 0; /* Поля вокруг изображения */
+    padding-right: 0;
+    margin: 20px 0 20px 35px;
+    background:linear-gradient(lightgreen,darkseagreen); /* Цвет фона */
+    float: left; /* Обтекание по правому краю */
+    border-radius: 15px;
+    opacity: 0.9;
+    box-shadow: 0 0 25px  rgba(0,0,0,0.9);
+    border: 2px solid #ffffff;
+}
+.name-maps{ /*карта на странице стадионы*/
     padding:50px 200px 50px 0;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 div iframe{
-    margin: 0 240px 40px 0;
+    margin: 0 0 40px 110px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px  rgba(0,0,0,0.9);
+    float: left;
 }
-.foto-stadiums {
+.foto-stadiums { /*фото на странице стадионы*/
     display:inline-block;
     width: 1000px;
     height: 500px;
     padding:60px 0 0 0;
-}
 
+}
 .foto-stadiums img {
     width: 200px;
     height: 100px;
     margin: 15px;
-
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 35px  rgba(0,0,0,0.9);
 }
-
 .foto-stadiums img:hover {
-    transform: scale(2.0);
+    transform: scale(1.9);
     -webkit-transition: transform 0.3s ease-in-out;
 }
-
-
 .foto-stadiums p{
     font-size: 25px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
+    color: black;
 }
-
-
-#footer {
+.right_side-stadium {
+    margin: 105px 0 0 0;
+}
+#footer { /*подвал сайта*/
     clear:both;
-    font-size:20px;
-    background-color: darkgreen;
+    background-color: green;
     text-align: center;
     height:100px;
-
+    opacity: 0.9;
 }
-#icon {
+#footer { /*подвал сайта*/
+    font-size:20px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
+#icon { /*кнопки фейсбук, вк, скайп находящиеся в подвале сайта*/
     list-style-type:none;
     text-align:center;
 }
 #icon li{
     display:inline;
     padding:10px;
+    color: white;
 }
 #icon a:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: auto;
+}
+#icon a{
     color: white;
     text-decoration: underline;
     cursor: auto;

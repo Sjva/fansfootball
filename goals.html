@@ -4,60 +4,89 @@
     <meta charset="UTF-8">
     <title>Голы</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!--подключение знаков фейсбук, вк, скайп в подвале сайта-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!--подключение фавикона-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<body style="background-image:url(image/fild.jpg)">
+<body>
 
 <header id="page_header">
-    <img src="image/fifa.jpg" id="logo"  alt="логотип фифа">
-    <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов">
-    <h1> <strong>FOOTBALL GAME</strong></h1>
-    <h4>the best game in the world</h4>
+    <div class="t3d">
+        <div class="rotate">
+            <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов" class="wow bounceInRight" data-wow-delay="0.5s">
+            <div class="text">
+                <div class="pd">
+                    <p><b>Сою́з европе́йских футбо́льных ассоциа́ций </b> <br>(англ. Union of European Football Associations, сокр. UEFA,
+                        в русской транслитерации УЕФА) — организация, управляющая футболом в Европе и некоторых западных регионах Азии.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t3d2">
+        <div class="rotate">
+            <img src="image/fifa.jpg" id="logo"  alt="логотип фифа" class="wow bounceInLeft" data-wow-delay="0.5s">
+            <div class="text3d">
+                <div class="pd">
+                    <p><b>Международная федерация футбола</b> <br> (фр. Fédération internationale de football association, сокр. FIFA) —
+                        главная футбольная организация, являющаяся крупнейшим международным руководящим органом в футболе, футзале и пляжном футболе.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="wow bounceInDown"> <strong>FOOTBALL GAME</strong></h1>
+    <h4 class="wow bounceInDown">the best game in the world</h4>
 </header>
 <br>
 <hr>
 <nav id="page_nav">
     <ul>
         <li>
-            <menu label="button" id="page_menu">
-                <a href="index.html">  <img src="image/cooltext224665271966124.png" onmouseover="this.src='image/cooltext224665271966124MouseOver.png';" onmouseout="this.src='image/cooltext224665271966124.png';" /></a>
-                <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';" onmouseout="this.src='image/cooltext224666207301082.png';" /> </a>
-                <a href="goals.html"><img src="image/cooltext224666401947131MouseOver.png"/> </a>
-                <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';" onmouseout="this.src='image/cooltext224666559983071.png';" /> </a>
-                <a href="stadium.html"><img src="image/cooltext225944224791182.png" onmouseover="this.src='image/cooltext225944224791182MouseOver.png';" onmouseout="this.src='image/cooltext225944224791182.png';" /></a>
-            </menu>
+            <div id="page_menu">
+                <a href="index.html">  <img src="image/cooltext224665271966124.png" onmouseover="this.src='image/cooltext224665271966124MouseOver.png';"
+                                            onmouseout="this.src='image/cooltext224665271966124.png';" alt="кнопка Главная"/></a>
+                <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';"
+                                            onmouseout="this.src='image/cooltext224666207301082.png';" alt="кнопка Историч"/> </a>
+                <a href="goals.html"><img src="image/cooltext224666401947131MouseOver.png" alt="кнопка Голы"/> </a>
+                <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';"
+                                         onmouseout="this.src='image/cooltext224666559983071.png';" alt="кнопка Фаны"/> </a>
+                <a href="stadium.html"><img src="image/cooltext225944224791182.png" onmouseover="this.src='image/cooltext225944224791182MouseOver.png';"
+                                            onmouseout="this.src='image/cooltext225944224791182.png';" alt="кнопка Стадионы"/></a>
+            </div>
         </li>
     </ul>
-</nav>
-<hr>
-<h2 id="video_name">Самые важные мячи сборной Украины</h2>
+  </nav>
+   <hr>
+     <h2 id="video_name">Самые важные мячи сборной Украины</h2>
 
-<video id="video" controls poster="image/sbornaj.jpg" muted
-       preload="none" height="600" width="800">
-    <source src="video/football.mp4" type='video/ogg; codecs="theora, vorbis"'>
-    <source src="video/football.ogv" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</video>
+      <video id="video" controls poster="image/sbornaj.jpg" muted preload="none" height="600" width="800">
+           <source src="video/football.mp4#t=6" type='video/ogg; codecs="theora, vorbis"'>
+           <source src="video/football.ogv#t=6" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+      </video>
 
-<aside id="right_side">
-    <h3>Исторические данные сборной</h3>
-    <img src="image/history.jpg" alt="Исторические данные сборной">
-    <div id="news">
-        <a href="http://football.ua/newsarc/" target="_blank">
-            <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';" onmouseout="this.src='image/cooltext224667211183871.png';" />
-        </a>
-    </div>
-</aside>
+    <aside id="right_side">
+        <h3>Исторические данные сборной</h3>
+        <img src="image/history.jpg" alt="Исторические данные сборной" >
+       <div id="news">
+            <a href="http://football.ua/newsarc/" target="_blank">
+                <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';"
+                     onmouseout="this.src='image/cooltext224667211183871.png';" alt="кнопка Новости" />
+            </a>
+       </div>
+    </aside>
 
-<footer id="footer">
-    <div class="container" id="icon">
+    <footer id="footer">
+       <div class="container" id="icon">
         <ul class="icons" >
             <li><a href="https://www.facebook.com/profile.php?id=100009540591794" target="_blank"><i class="fa fa-facebook-official  fa-2x" aria-hidden="true"></i></a></li>
             <li><a href="https://vk.com/id11833006" target="_blank"><i class="fa fa-vk  fa-2x" aria-hidden="true"></i></a></li>
             <li><a href="https://web.skype.com/ru" target="_blank"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></li>
         </ul>
-    </div>
-    fansfootball by levko.zzz.com.ua <br> 2016
-</footer>
+      </div>
+     fansfootball by levko.zzz.com.ua <br> 2016
+   </footer>
 
 </body>
 </html>

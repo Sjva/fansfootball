@@ -3,97 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Стадионы Украины</title>
-    <link href="animate.css" rel="stylesheet" type="text/css">
+
     <link href="style.css" rel="stylesheet" type="text/css">
+    <!--подключение знаков фейсбук, вк, скайп в подвале сайта-->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--подключение фавикона-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
 </head>
 
-<body style="background-image:url(image/fild.jpg)" >
+<body >
 <header id="page_header">
-    <img src="image/fifa.jpg" id="logo"  alt="логотип фифа">
-    <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов">
-    <h1 > <strong>FOOTBALL GAME</strong></h1>
-    <h4 >the best game in the world</h4>
+    <div class="t3d">
+        <div class="rotate">
+            <img src="image/league.jpg" id="logo1"  alt="логотип Лиги Чемпионов" class="wow bounceInRight" data-wow-delay="0.5s">
+            <div class="text">
+                <div class="pd">
+                    <p><b>Сою́з европе́йских футбо́льных ассоциа́ций </b> <br>(англ. Union of European Football Associations, сокр. UEFA,
+                        в русской транслитерации УЕФА) — организация, управляющая футболом в Европе и некоторых западных регионах Азии.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t3d2">
+        <div class="rotate">
+            <img src="image/fifa.jpg" id="logo"  alt="логотип фифа" class="wow bounceInLeft" data-wow-delay="0.5s">
+            <div class="text3d">
+                <div class="pd">
+                    <p><b>Международная федерация футбола</b> <br> (фр. Fédération internationale de football association, сокр. FIFA) —
+                        главная футбольная организация, являющаяся крупнейшим международным руководящим органом в футболе, футзале и пляжном футболе.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="wow bounceInDown"> <strong>FOOTBALL GAME</strong></h1>
+    <h4 class="wow bounceInDown">the best game in the world</h4>
 </header>
-
-<br>
+    <br>
 <hr>
-<nav id="page_nav">
-    <ul>
-        <li>
-            <menu label="button" id="page_menu">
-                <a href="index.html">  <img src="image/cooltext224665271966124.png" onmouseover="this.src='image/cooltext224665271966124MouseOver.png';" onmouseout="this.src='image/cooltext224665271966124.png';" /></a>
-                <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';" onmouseout="this.src='image/cooltext224666207301082.png';" /> </a>
-                <a href="goals.html"><img src="image/cooltext224666401947131.png" onmouseover="this.src='image/cooltext224666401947131MouseOver.png';" onmouseout="this.src='image/cooltext224666401947131.png';" /> </a>
-                <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';" onmouseout="this.src='image/cooltext224666559983071.png';" /> </a>
-                <a href="stadium.html"> <img src="image/cooltext225944224791182MouseOver.png";/> </a>
-            </menu>
+   <nav id="page_nav">
+      <ul>
+         <li>
+            <div id="page_menu">
+                <a href="index.html">  <img src="image/cooltext224665271966124.png" onmouseover="this.src='image/cooltext224665271966124MouseOver.png';"
+                                            onmouseout="this.src='image/cooltext224665271966124.png';" alt="кнопка Главная"/></a>
+                <a href="history.html"><img src="image/cooltext224666207301082.png" onmouseover="this.src='image/cooltext224666207301082MouseOver.png';"
+                                            onmouseout="this.src='image/cooltext224666207301082.png';" alt="кнопка История"/> </a>
+                <a href="goals.html"><img src="image/cooltext224666401947131.png" onmouseover="this.src='image/cooltext224666401947131MouseOver.png';"
+                                          onmouseout="this.src='image/cooltext224666401947131.png';" alt="кнопка Голы" /> </a>
+                <a href="fans.html"><img src="image/cooltext224666559983071.png" onmouseover="this.src='image/cooltext224666559983071MouseOver.png';"
+                                         onmouseout="this.src='image/cooltext224666559983071.png';" alt="кнопка Фаны"/> </a>
+                <a href="stadium.html"> <img src="image/cooltext225944224791182MouseOver.png" alt="кнопка Стадионы"/> </a>
+            </div>
         </li>
-    </ul>
-</nav>
+      </ul>
+   </nav>
 <hr>
-<aside id="right_side">
+  <aside id="right_side" class="right_side-stadium">
     <h3>Исторические данные сборной</h3>
     <img src="image/history.jpg" alt="Исторические данные сборной">
     <div id="news">
         <a href="http://football.ua/newsarc/" target="_blank">
-            <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';" onmouseout="this.src='image/cooltext224667211183871.png';" />
+            <img src="image/cooltext224667211183871.png" onmouseover="this.src='image/cooltext224667211183871MouseOver.png';"
+                 onmouseout="this.src='image/cooltext224667211183871.png';" alt="кнопка Новости"/>
         </a>
     </div>
-</aside>
+  </aside>
 
-<div class="foto-stadiums">
+  <div class="foto-stadiums">
     <div>
         <p> Стадион НСК "Олимпийский", Киев</p>
-        <img src="image/olym.jpg"  class="big_foto" alt="увеличение картинки на сайте"/>
-        <img src="image/olym1.jpg" class="big_foto"/>
-        <img src="image/olym2.jpg" class="big_foto"/>
-        <img src="image/olym3.jpg" class="big_foto"/>
+        <img src="image/olym.jpg"  class="big_foto" alt="фото стадиона Олимпийский"/>
+        <img src="image/olym1.jpg" class="big_foto" alt="фото стадиона Олимпийский"/>
+        <img src="image/olym2.jpg" class="big_foto" alt="фото стадиона Олимпийский"/>
+        <img src="image/olym3.jpg" class="big_foto" alt="фото стадиона Олимпийский"/>
     </div>
     <div>
         <p> Стадион "Арена Львов", Львов</p>
-        <img src="image/Lviv1.jpg" class="big_foto"/>
-        <img src="image/Lviv3.jpg" class="big_foto"/>
-        <img src="image/Lviv2.jpg" class="big_foto"/>
-        <img src="image/Lviv.jpg" class="big_foto"/>
+        <img src="image/Lviv1.jpg" class="big_foto" alt="фото стадиона Арена Львов"/>
+        <img src="image/Lviv3.jpg" class="big_foto" alt="фото стадиона Арена Львов"/>
+        <img src="image/Lviv2.jpg" class="big_foto" alt="фото стадиона Арена Львов"/>
+        <img src="image/Lviv.jpg" class="big_foto" alt="фото стадиона Арена Львов"/>
     </div>
     <div>
         <p> Стадион "Металлист", Харьков</p>
-        <img src="image/metall.jpg" class="big_foto"/>
-        <img src="image/metall1.jpg" class="big_foto"/>
-        <img src="image/metall2.jpg" class="big_foto"/>
-        <img src="image/metall3.jpg" class="big_foto"/>
+        <img src="image/metall.jpg" class="big_foto" alt="фото стадиона Металлист"/>
+        <img src="image/metall1.jpg" class="big_foto" alt="фото стадиона Металлист"/>
+        <img src="image/metall2.jpg" class="big_foto" alt="фото стадиона Металлист"/>
+        <img src="image/metall3.jpg" class="big_foto" alt="фото стадиона Металлист"/>
     </div>
     <div>
         <p> Стадион "Донбасс Арена", Донецк</p>
-        <img src="image/donetsc.jpg" class="big_foto"/>
-        <img src="image/donetsc1.jpg" class="big_foto"/>
-        <img src="image/donetsc2.jpg" class="big_foto"/>
-        <img src="image/donetsc3.jpg" class="big_foto"/>
+        <img src="image/donetsc.jpg" class="big_foto" alt="фото стадиона Донбасс Арена"/>
+        <img src="image/donetsc1.jpg" class="big_foto" alt="фото стадиона Донбасс Арена"/>
+        <img src="image/donetsc2.jpg" class="big_foto"  alt="фото стадиона Донбасс Арена"/>
+        <img src="image/donetsc3.jpg" class="big_foto" alt="фото стадиона Донбасс Арена"/>
     </div>
     <div>
         <p> Стадион "Днепр Арена", Днепр</p>
-        <img src="image/dnepr1.jpg" class="big_foto"/>
-        <img src="image/dnepr2.jpg" class="big_foto"/>
-        <img src="image/dnepr3.jpg" class="big_foto"/>
-        <img src="image/dnepr4.jpg" class="big_foto"/>
+        <img src="image/dnepr1.jpg" class="big_foto" alt="фото стадиона Днепр Арена"/>
+        <img src="image/dnepr2.jpg" class="big_foto" alt="фото стадиона Днепр Арена"/>
+        <img src="image/dnepr3.jpg" class="big_foto" alt="фото стадиона Днепр Арена"/>
+        <img src="image/dnepr4.jpg" class="big_foto" alt="фото стадиона Днепр Арена"/>
     </div>
     <div>
         <p> Стадион "Черноморец", Одесса</p>
-        <img src="image/chernomor.jpg" class="big_foto"/>
-        <img src="image/chernomor1.jpg" class="big_foto"/>
-        <img src="image/chernomor2.jpg" class="big_foto"/>
-        <img src="image/chernomor3.jpg" class="big_foto"/>
+        <img src="image/chernomor.jpg" class="big_foto" alt="фото стадиона Черноморец"/>
+        <img src="image/chernomor1.jpg" class="big_foto" alt="фото стадиона Черноморец"/>
+        <img src="image/chernomor2.jpg" class="big_foto" alt="фото стадиона Черноморец"/>
+        <img src="image/chernomor3.jpg" class="big_foto" alt="фото стадиона Черноморец"/>
     </div>
-</div>
-<div>
+  </div>
+  <div>
     <p class="name-maps"> Карта стадионов для игр сборной Украины </p>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1f_RFxSaM-VUlCRQ_hv16qzJRYQ0" width="900" height="500"></iframe>
-</div>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1f_RFxSaM-VUlCRQ_hv16qzJRYQ0" width="900" height="500" id="maps"></iframe>
+   </div>
 
-<footer id="footer" class="wow flipInY" data-wow-delay="0.5s">
+  <footer id="footer" class="wow flipInY" data-wow-delay="0.5s">
     <div class="container" id="icon">
         <ul class="icons" >
             <li><a href="https://www.facebook.com/profile.php?id=100009540591794" target="_blank"><i class="fa fa-facebook-official  fa-2x" aria-hidden="true"></i></a></li>
@@ -102,6 +130,6 @@
         </ul>
     </div>
     fansfootball by levko.zzz.com.ua <br> 2016
-</footer>
+  </footer>
 </body>
 </html>
